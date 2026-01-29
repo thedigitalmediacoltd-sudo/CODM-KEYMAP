@@ -124,12 +124,6 @@ val dmzKeys = mutableStateListOf(
     KeyData(lockMouseKey, Res.string.br_lock_mouse, "CTRL", 17, loadBrKey(lockMouseKey) ?: "CTRL", loadBrKeyCode(lockMouseKey) ?: 17)
 )
 
-// OB mode uses the same keybinds as Multi Player (no custom keys needed)
-val obKeys = mutableStateListOf<KeyData>()
-
-// Zombies mode uses the same keybinds as Multi Player (no custom keys needed)
-val zombiesKeys = mutableStateListOf<KeyData>()
-
 
 fun loadGundamCode(id: String) = window.localStorage[GD + id + code]?.toInt()
 

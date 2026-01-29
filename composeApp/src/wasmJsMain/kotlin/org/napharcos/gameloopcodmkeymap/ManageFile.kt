@@ -36,8 +36,6 @@ object ManageFile {
     private const val BR_START = "<KeyMapMode ModeID=\"2\""
     private const val GD_START = "<KeyMapMode ModeID=\"3\""
     private const val DMZ_START = "<KeyMapMode ModeID=\"4\""
-    private const val OB_START = "<KeyMapMode ModeID=\"5\""
-    private const val ZOMBIES_START = "<KeyMapMode ModeID=\"6\""
     private const val MODE_END = "</KeyMapMode>"
 
     private lateinit var defaultCodmText: String
@@ -45,8 +43,6 @@ object ManageFile {
     private lateinit var brText: String
     private lateinit var gdText: String
     private lateinit var dmzText: String
-    private lateinit var obText: String
-    private lateinit var zombiesText: String
 
     var showingOverrideMpAndBr by mutableStateOf(false)
     var overrideMpAndBr by mutableStateOf(true)
@@ -63,8 +59,6 @@ object ManageFile {
             brText = BR_START + defaultCodmText.substringAfter(BR_START).substringBefore(MODE_END) + MODE_END
             gdText = GD_START + defaultCodmText.substringAfter(GD_START).substringBefore(MODE_END) + MODE_END
             dmzText = DMZ_START + defaultCodmText.substringAfter(DMZ_START).substringBefore(MODE_END) + MODE_END
-            obText = OB_START + defaultCodmText.substringAfter(OB_START).substringBefore(MODE_END) + MODE_END
-            zombiesText = ZOMBIES_START + defaultCodmText.substringAfter(ZOMBIES_START).substringBefore(MODE_END) + MODE_END
 
             //loadLocalData()
         }
@@ -103,8 +97,6 @@ object ManageFile {
         var editedCodmText = defaultCodmText
         var editedGdText = gdText
         var editedDmzText = dmzText
-        var editedObText = obText
-        var editedZombiesText = zombiesText
 
         editedCodmText = applyMode(
             codm = editedCodmText,
@@ -127,12 +119,6 @@ object ManageFile {
 
         dmzKeys.forEach { editedDmzText = editedDmzText.replaceKeys(it) }
         editedCodmText = editedCodmText.replace(dmzText, editedDmzText)
-
-        obKeys.forEach { editedObText = editedObText.replaceKeys(it) }
-        editedCodmText = editedCodmText.replace(obText, editedObText)
-
-        zombiesKeys.forEach { editedZombiesText = editedZombiesText.replaceKeys(it) }
-        editedCodmText = editedCodmText.replace(zombiesText, editedZombiesText)
 
         if (replaceMpFire) editedCodmText = replaceMPFire(editedCodmText)
         if (replaceBrFire) editedCodmText = replaceBRFire(editedCodmText)
