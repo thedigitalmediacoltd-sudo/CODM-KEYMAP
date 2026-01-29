@@ -781,4 +781,129 @@
         <KeyMappingEx ItemName="WASD" Point_X="0.281553" Point_Y="0.671470" Description="移动" MiniVisiable="false" MiniDisable="false" Type="CrossKey" speed="0" UP_AsciiCode="87" DOWN_AsciiCode="83" LEFT_AsciiCode="65" RIGHT_AsciiCode="68" Offset="0.106337"/>
         <KeyMappingEx ItemName="Move with Mouse" Point_X="0.661719" Point_Y="0.369444" Description="视角" MiniVisiable="false" MiniDisable="false" Type="RClick" LOCK_AsciiCode="-2" AsciiCode="-2" Sensi_X="1.000000" Sensi_Y="1.000000"/>
     </KeyMapMode>
+    <KeyMapMode ModeID="6" Name="Zombies" CurrModeEnableTips="1">
+        <KeyMapping ItemName="Right Click" Point_X="0.874219" Point_Y="0.541667" Description="右键开镜" MiniVisiable="false" MiniDisable="false" ShowOnLockAsciiCode="192" AsciiCode="-2">
+            <SwitchOperation Description="取消僵尸雷" EnableSwitch="Sniper2" DisableSwitch="XBtn|MapOpenFlag|InSetUp|BreastPatting|ReturnSetUp|SkillX" Point_X="0.060937" Point_Y="0.519444"/>
+            <SwitchOperation Description="导弹齐射" EnableSwitch="MissileVolley" DisableSwitch="XBtn|MapOpenFlag|InSetUp|BreastPatting|ReturnSetUp|Knife2|SkillX" Point_X="0.944531" Point_Y="0.506944"/>
+            <SwitchOperation Description="下飞" EnableSwitch="FlyDown" DisableSwitch="XBtn|MapOpenFlag|InSetUp|BreastPatting|ReturnSetUp|Knife2|SkillX" Point_X="0.060937" Point_Y="0.519444" HideTips="1"/>
+            <SwitchOperation Description="下车" EnableSwitch="GetOutCar" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.046875" Point_Y="0.637500"/>
+            <SwitchOperation Description="影刃" EnableSwitch="ShadowBlade" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.874219" Point_Y="0.541667" HideTips="1"/>
+            <SwitchOperation Description="瞄准" EnableSwitch="Sniper" DisableSwitch="XBtn|MapOpenFlag|InSetUp|BreastPatting|ReturnSetUp|SkillX" Point_X="0.874219" Point_Y="0.541667" HideTips="1"/>
+            <SwitchOperation Description="取消瞄准" EnableSwitch="Sniper2" DisableSwitch="XBtn|MapOpenFlag|InSetUp|BreastPatting|ReturnSetUp|SkillX" Point_X="0.874219" Point_Y="0.541667" HideTips="1"/>
+            <SwitchOperation Description="刀" EnableSwitch="Knife" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.060937" Point_Y="0.519444" HideTips="1"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$tabName" Point_X="0.049219" Point_Y="0.084722" Description="背包" MiniVisiable="false" MiniDisable="false" AsciiCode="$tabCode">
+            <SwitchOperation Description="取消释放弓箭/盾牌" EnableSwitch="Bow" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.060937" Point_Y="0.519444"/>
+            <SwitchOperation Description="战绩面板" EnableSwitch="SetUp" DisableSwitch="InSetUp|ReturnSetUp|Knife2|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|MissileVolley|Cartoon" Point_X="0.049219" Point_Y="0.084722"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$escName" Point_X="0.765625" Point_Y="0.050000" Description="打开设置" MiniVisiable="false" MiniDisable="false" AsciiCode="$escCode">
+            <SwitchOperation Description="关闭躲猫猫介绍" EnableSwitch="Cartoon" Point_X="0.916406" Point_Y="0.209722"/>
+            <SwitchOperation Description="返回设置" EnableSwitch="ReturnSetUp" Point_X="0.033203" Point_Y="0.052083"/>
+            <SwitchOperation Description="关闭设置" EnableSwitch="InSetUp" Point_X="0.775000" Point_Y="0.504167" TexturePosition="InSetUp"/>
+            <SwitchOperation Description="打开设置" EnableSwitch="SetUp" DisableSwitch="InSetUp|ReturnSetUp|Knife2|HangUp|Cartoon" Point_X="0.765625" Point_Y="0.050000"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$spaceName" Point_X="0.958008" Point_Y="0.675347" Description="跳跃" MiniVisiable="false" MiniDisable="false" AsciiCode="$spaceCode">
+            <SwitchOperation Description="下车" EnableSwitch="GetOutCar" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.942187" Point_Y="0.670000"/>
+            <SwitchOperation Description="" EnableSwitch="FlyDown" DisableSwitch="ReturnSetUp|InSetUp|Jump" Point_X="0.739375" Point_Y="0.587778" HideTips="1"/>
+            <SwitchOperation Description="跳跃" EnableSwitch="Jump" DisableSwitch="ReturnSetUp" HideTips="1"/>
+            <SwitchOperation Description="跳跃" EnableSwitch="SetUp" DisableSwitch="InSetUp|ReturnSetUp|Knife2|HangUp" Point_X="0.938008" Point_Y="0.675347" HideTips="1"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$1Name" Point_X="0.494531" Point_Y="0.876389" Description="换1号武器" MiniVisiable="false" MiniDisable="false" AsciiCode="$1Code">
+            <SwitchOperation Description="技能1（高达模式）" EnableSwitch="End1" DisableSwitch="InSetUp" Point_X="0.788542" Point_Y="0.438272"/>
+            <SwitchOperation Description="换1号武器" EnableSwitch="SwitchMode6" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.427344" Point_Y="0.852778"/>
+            <SwitchOperation Description="换1号武器" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.494531" Point_Y="0.876389"/>
+            <SwitchOperation Description="换1号武器" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.494531" Point_Y="0.876389"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$2Name" Point_X="0.618750" Point_Y="0.883333" Description="换2号武器" MiniVisiable="false" MiniDisable="false" AsciiCode="$2Code">
+            <SwitchOperation Description="技能2（高达模式）" EnableSwitch="End1" DisableSwitch="InSetUp" Point_X="0.876042" Point_Y="0.436420"/>
+            <SwitchOperation Description="换1号武器" EnableSwitch="SwitchMode6" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.539063" Point_Y="0.862500"/>
+            <SwitchOperation Description="换2号武器" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.618750" Point_Y="0.883333"/>
+            <SwitchOperation Description="换2号武器" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.618750" Point_Y="0.883333"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$3Name" Point_X="0.406250" Point_Y="0.880556" Description="空对地导弹" MiniVisiable="false" MiniDisable="false" AsciiCode="$3Code">
+            <SwitchOperation Description="技能3（高达模式）" EnableSwitch="End1" DisableSwitch="InSetUp" Point_X="0.962500" Point_Y="0.436420"/>
+            <SwitchOperation Description="扫描" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.406250" Point_Y="0.880556"/>
+            <SwitchOperation Description="扫描" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.406250" Point_Y="0.880556"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$4Name" Point_X="0.350781" Point_Y="0.884722" Description="飞机雷" MiniVisiable="false" MiniDisable="false" AsciiCode="$4Code">
+            <SwitchOperation Description="飞机雷" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.350781" Point_Y="0.884722"/>
+            <SwitchOperation Description="飞机雷" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.350781" Point_Y="0.884722"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$5Name" Point_X="0.290625" Point_Y="0.893056" Description="扫描" MiniVisiable="false" MiniDisable="false" AsciiCode="$5Code">
+            <SwitchOperation Description="空对地导弹" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.290625" Point_Y="0.893056"/>
+            <SwitchOperation Description="空对地导弹" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.290625" Point_Y="0.893056"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$6Name" Point_X="0.850781" Point_Y="0.884722" Description="火箭筒" MiniVisiable="false" MiniDisable="false" AsciiCode="$6Code">
+            <SwitchOperation Description="火箭筒" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.850781" Point_Y="0.884722"/>
+            <SwitchOperation Description="火箭筒" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon|SwitchMode6" Point_X="0.850781" Point_Y="0.884722"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$qName" Point_X="0.908594" Point_Y="0.841667" Description="战术装备" MiniVisiable="false" MiniDisable="false" AsciiCode="$qCode">
+            <SwitchOperation Description="战术装备" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon" Point_X="0.908594" Point_Y="0.841667"/>
+            <SwitchOperation Description="战术装备" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|SwitchMode4|Cartoon" Point_X="0.908594" Point_Y="0.841667"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$gName" Point_X="0.792188" Point_Y="0.591667" Description="丢雷" MiniVisiable="false" MiniDisable="false" AsciiCode="$gCode">
+            <SwitchOperation Description="丢雷" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.792188" Point_Y="0.591667"/>
+            <SwitchOperation Description="丢雷" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.792188" Point_Y="0.591667"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$rName" Point_X="0.806250" Point_Y="0.672222" Description="换弹" MiniVisiable="false" MiniDisable="false" AsciiCode="$rCode">
+            <SwitchOperation Description="换弹" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.806250" Point_Y="0.672222" HideTips="1"/>
+            <SwitchOperation Description="换弹" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.806250" Point_Y="0.672222"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$cName" Point_X="0.852539" Point_Y="0.918403" Description="下蹲" MiniVisiable="false" MiniDisable="false" AsciiCode="$cCode">
+            <SwitchOperation Description="趴下" EnableSwitch="Fall" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp" Point_X="0.852539" Point_Y="0.918403" HideTips="1"/>
+            <SwitchOperation Description="下蹲" EnableSwitch="Squat" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp" Point_X="0.852539" Point_Y="0.918403" HideTips="1"/>
+            <SwitchOperation Description="取消下蹲" EnableSwitch="CancelSquat" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp" Point_X="0.852539" Point_Y="0.918403" HideTips="1"/>
+            <SwitchOperation Description="取消趴下" EnableSwitch="CancelFall" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp" Point_X="0.852539" Point_Y="0.918403" HideTips="1"/>
+            <SwitchOperation Description="翻滚" EnableSwitch="Roll" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp" Point_X="0.852539" Point_Y="0.918403" HideTips="1"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$eName" Point_X="0.458594" Point_Y="0.694444" Description="拆弹" MiniVisiable="false" MiniDisable="false" AsciiCode="$eCode">
+            <SwitchOperation Description="感应弹" EnableSwitch="Induction" DisableSwitch="InSetUp|ReturnSetUp|Knife2|Diamond1|Diamond2|Diamond3|Diamond4|HangUp" Point_X="0.800781" Point_Y="0.677778"/>
+            <SwitchOperation Description="拆弹" EnableSwitch="BombDisposal" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.458594" Point_Y="0.694444"/>
+            <SwitchOperation Description="技能" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|MissileVolley|WatchTeammates|Cartoon" Point_X="0.942187" Point_Y="0.347222"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$fName" Point_X="0.175000" Point_Y="0.386111" Description="僵尸模式功能" MiniVisiable="false" MiniDisable="false" NoDelete="1" SpecialFunc="1002" OpGuidClass="0" AsciiCode="$fCode">
+            <SwitchOperation Description="开启功能（僵尸模式）" EnableSwitch="OpenFunction1" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.476351" Point_Y="0.729000" TexturePosition="OpenFunction1"/>
+            <SwitchOperation Description="开启功能" EnableSwitch="OpenFunction" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.476351" Point_Y="0.729000" TexturePosition="OpenFunction"/>
+            <SwitchOperation Description="盾牌炮塔" EnableSwitch="Hand2|YellowTriangle" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.503906" Point_Y="0.702778"/>
+            <SwitchOperation Description="换形（躲猫猫）" EnableSwitch="Flash2" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.729688" Point_Y="0.830556"/>
+            <SwitchOperation Description="空投（一击必杀）" EnableSwitch="Airdrop3" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.503145" Point_Y="0.696078"/>
+            <SwitchOperation Description="切换位置" EnableSwitch="SwitchingPosition" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.043750" Point_Y="0.731944" TexturePosition="SwitchingPosition"/>
+            <SwitchOperation Description="扔回丢雷" EnableSwitch="BackGrenade" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.744531" Point_Y="0.611111" TexturePosition="BackGrenade"/>
+            <SwitchOperation Description="取消丢雷" EnableSwitch="CancelFireTheHole" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.175000" Point_Y="0.386111" TexturePosition="CancelFireTheHole"/>
+            <SwitchOperation Description="换武器" EnableSwitch="SwitchWeapon" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.508594" Point_Y="0.776389"/>
+            <SwitchOperation Description="无畏战士" EnableSwitch="XS1Goliath" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.522656" Point_Y="0.694444"/>
+            <SwitchOperation Description="取消" EnableSwitch="YellowTriangle" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.597656" Point_Y="0.698611" TexturePosition="YellowTriangle"/>
+            <SwitchOperation Description="拾取防爆装置" EnableSwitch="TrophySystem|OpenFunction" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.516406" Point_Y="0.695833" TexturePosition="TrophySystem"/>
+            <SwitchOperation Description="下车" EnableSwitch="GetOutCar" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.943750" Point_Y="0.376389" HideTips="1"/>
+            <SwitchOperation Description="遥控车退出" EnableSwitch="Remote" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.911250" Point_Y="0.577778" HideTips="1" TexturePosition="Remote"/>
+            <SwitchOperation Description="换背包" EnableSwitch="SwitchBackpage" DisableSwitch="InSetUp|ReturnSetUp|Knife2" Point_X="0.508594" Point_Y="0.776389" TexturePosition="SwitchBackpage"/>
+            <SwitchOperation Description="终结" EnableSwitch="End" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" TexturePosition="End"/>
+            <SwitchOperation Description="使用核弹" EnableSwitch="Missile" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2" Point_X="0.792188" Point_Y="0.591667" TexturePosition="Missile"/>
+            <SwitchOperation Description="爬楼梯（团队模式）" EnableSwitch="Stair" DisableSwitch="XBtn|MapOpenFlag|InSetUp" Point_X="0.794382" Point_Y="0.587000" TexturePosition="Stair"/>
+            <SwitchOperation Description="" EnableSwitch="SetUp" DisableSwitch="XBtn|MapOpenFlag|ReturnSetUp" Point_X="0.739375" Point_Y="0.587778" />
+            <SwitchOperation Description="" EnableSwitch="" DisableSwitch="ReturnSetUp" Point_X="0.739375" Point_Y="0.587778" HideTips="1" />
+        </KeyMapping>
+        <KeyMapping ItemName="$xName" Point_X="0.947656" Point_Y="0.754167" Description="近战" MiniVisiable="false" MiniDisable="false" AsciiCode="$xCode">
+            <SwitchOperation Description="近战" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.947656" Point_Y="0.754167"/>
+            <SwitchOperation Description="近战" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.947656" Point_Y="0.754167"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$vName" Point_X="0.918750" Point_Y="0.600000" Description="进气" MiniVisiable="false" MiniDisable="false" AsciiCode="$vCode">
+            <SwitchOperation Description="进气（坦克高达）" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.918750" Point_Y="0.600000"/>
+            <SwitchOperation Description="进气（坦克高达）" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.918750" Point_Y="0.600000"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$bName" Point_X="0.942187" Point_Y="0.347222" Description="切换射击模式" MiniVisiable="false" MiniDisable="false" AsciiCode="$bCode">
+            <SwitchOperation Description="近战武器技能（僵尸斧子）" EnableSwitch="Hand" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.942187" Point_Y="0.347222"/>
+            <SwitchOperation Description="切换射击模式" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|MissileVolley|WatchTeammates|Cartoon" Point_X="0.942187" Point_Y="0.347222"/>
+            <SwitchOperation Description="切换射击模式" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|MissileVolley|WatchTeammates|Cartoon" Point_X="0.942187" Point_Y="0.347222"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$zName" Point_X="0.906250" Point_Y="0.400000" Description="观战队友" MiniVisiable="false" MiniDisable="false" AsciiCode="$zCode">
+            <SwitchOperation Description="观战队友" EnableSwitch="Reload" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|WatchTeammates|Cartoon" Point_X="0.906250" Point_Y="0.400000"/>
+            <SwitchOperation Description="观战队友" EnableSwitch="SetUp" DisableSwitch="InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|WatchTeammates|Cartoon" Point_X="0.906250" Point_Y="0.400000"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$mName" Point_X="0.928906" Point_Y="0.055556" Description="地图" MiniVisiable="false" MiniDisable="false" AsciiCode="$mCode">
+            <SwitchOperation Description="打开地图" EnableSwitch="Reload" DisableSwitch="XBtn|MapOpenFlag|InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.928906" Point_Y="0.055556"/>
+            <SwitchOperation Description="打开地图" EnableSwitch="SetUp" DisableSwitch="XBtn|MapOpenFlag|InSetUp|Diamond1|Diamond2|Diamond3|Diamond4|HangUp|ReturnSetUp|Knife2|Cartoon" Point_X="0.928906" Point_Y="0.055556"/>
+        </KeyMapping>
+        <KeyMapping ItemName="$wasdName" AsciiCode="$wasdCode" />
+    </KeyMapMode>
 </Item>
